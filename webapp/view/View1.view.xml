@@ -1,10 +1,9 @@
-<mvc:View controllerName="FitBit.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-	xmlns="sap.m">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="FitBit.controller.View1" displayBlock="true">
 	<App>
 		<pages>
-			<Page title="{i18n>title}">
+			<Page title="Title">
 				<content>
-					<Button text = "Save Data" press = "onPress"/>
+					<Button text="Save Data" press="onPress"/>
 					<Table id="table" items="{messages>/data}">
 						<columns>
 							<Column id="userColumn">
@@ -18,6 +17,7 @@
 							<ColumnListItem>
 								<cells>
 									<ObjectHeader title="{messages>username}"/>
+									
 									<Text text="{messages>text}"/>
 								</cells>
 							</ColumnListItem>
